@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ebrima bold;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #252525  ;
+}
+
+.active{
+    text-decoration:underline;
+    color: white;
+}
+
+#preloader{
+    background: #000 url("../img/Preloader.gif") no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-size: 50%;
+
+}
+
+/*----------Portraits----------*/
+
+.overview{
+    color: rgb(255,255,255);
+    font-size: 25px;
+    line-height: 50px;
+    margin-left: 100px;
+    padding-top: 15vh;
+}
+
+.overview p {
+    font-weight: bold;
+}
+
+.overview h1{
+    margin: 15px;
+}
+
+.overview h1::after{
+    content: '';
+    width: 700px;
+    height: 6px;
+    margin-top: 60px;
+    border-radius: 30px;
+    background: #ffffff;
+    position: absolute;
+    left: 23%;
+    transform: translate(-50%);
+}
+
+/*.overview .prices {
+    font-size: 40px;
+}*/
+
+.overview .indent {
+    margin-left: 80px;
+}
+
+.overview ul li{
+    margin-left: 50px;
+}
+
+.title h2{
+    height: 0px;
+}
+
+.col-5{
+    flex-basis: 21%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.col-5 img{
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.col-5 img:hover{
+    transform: scale(110%);
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #ffffff;
+}
+
+.title::after{
+    content: '';
+    background: #ffffff;
+    width: 400px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*----------No portraits----------*/
+
+
+/*----------Open animation renders----------*/
+
+.modal{
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transition: 0.25s ease-out;
+}
+
+.modal.open{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.full-img{
+    position: absolute;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.25s ease-out;
+}
+
+.full-img.open{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/*----------No Open animation renders----------*/

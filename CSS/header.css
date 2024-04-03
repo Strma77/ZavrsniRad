@@ -1,0 +1,60 @@
+/*---------------header---------------*/
+
+.header{
+    
+    background: #131313;
+    font-size: 24px;
+    margin: auto;
+    box-shadow: 5px 1px 0px rgb(255, 255, 255);
+    width: 100%;
+    z-index: 10;
+}
+
+.logo img{
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    max-width: 20%;
+    max-height: 20% 
+}
+
+.cart img{
+    display: flex;
+    margin-top: -110px;
+}
+
+.indicator{
+    height: 5px;
+    width: 0px;
+    background-color: orange;
+}
+
+
+/*---------------navigation---------------*/
+
+.navbar{
+    
+    display: flex;
+    padding: 20px;
+}
+
+nav{
+    flex: 1;
+    padding-left: 600px;
+}
+
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+/*---------------No more navigation---------------*/
+
+
+/*---------------No more header---------------*/

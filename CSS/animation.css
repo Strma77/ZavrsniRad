@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 22px
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+canvas{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.text {
+    display: none;
+}
+
+

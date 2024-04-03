@@ -1,0 +1,111 @@
+.form-container{
+    width: 100%;
+}
+
+.form-box{
+    width: 90%;
+    border-radius: 40px;
+    max-width: 470px;
+    margin-top: -200px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #000;
+    position: relative;
+}
+
+.form-box h1::after{
+    content: '';
+    width: 80px;
+    height: 4px;
+    border-radius: 30px;
+    background: #cb6f05;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.input-fields{
+    background: #e8e8e8;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-fields i{
+    margin-left: 15px;
+    color: #999;
+}
+
+form p {
+    text-align: left;
+    font-size: 16px;
+}
+
+form p a{
+    text-decoration: none;
+    color: orange;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    background: #2f2f2f;
+    color: #ffffff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.inputs{
+    height: 260px;
+}
+
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+}
+
+
+/*----------background image--------*/
+
+.bg-img{
+    background-image: url("../img/Login.png");
+    width: 100%;
+    height: 100vh;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
